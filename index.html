@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-gray-800 shadow-lg z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold">MyPortfolio</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="h-screen flex items-center justify-center text-center px-4">
+    <div>
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Halo, Saya <span class="text-blue-400">Farel</span></h2>
+      <p class="text-gray-300 mb-6">Web Developer | UI/UX Enthusiast</p>
+      <button onclick="scrollToSection('projects')" class="bg-blue-500 px-6 py-2 rounded-lg hover:bg-blue-600 transition">Lihat Project</button>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-gray-800">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">Tentang Saya</h3>
+      <p class="text-gray-300">Saya adalah seorang developer yang tertarik pada pembuatan website modern dan interaktif menggunakan teknologi terbaru seperti TailwindCSS dan JavaScript.</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10">Projects</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-2">Project 1</h4>
+          <p class="text-gray-400">Deskripsi project singkat.</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-2">Project 2</h4>
+          <p class="text-gray-400">Deskripsi project singkat.</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-2">Project 3</h4>
+          <p class="text-gray-400">Deskripsi project singkat.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-800">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">Contact</h3>
+      <p class="text-gray-300 mb-4">Email: farel@email.com</p>
+      <button onclick="showAlert()" class="bg-green-500 px-6 py-2 rounded-lg hover:bg-green-600 transition">Hubungi Saya</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-gray-900 border-t border-gray-700">
+    <p class="text-gray-400">© 2026 Farel. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function showAlert() {
+      alert('Terima kasih sudah menghubungi saya!');
+    }
+  </script>
+
+</body>
+</html>
