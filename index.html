@@ -3,226 +3,303 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Saya</title>
+  <title>Portofolio Farel</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    .project-item {
+    .project-item, .article-item {
       transition: all 0.7s ease;
       position: absolute;
       left: 50%;
       top: 50%;
     }
+
+    .pos-top { object-position: center top; }
+    .pos-bottom { object-position: center bottom; }
+    .pos-left { object-position: left center; }
+    .pos-right { object-position: right center; }
+    .pos-center { object-position: center; }
   </style>
 </head>
 
-<body class="bg-[#010101] text-[#fefeff] font-sans">
+<body class="bg-[#EEEEEE] text-[#222] font-sans">
 
-  <!-- Navbar -->
-  <nav class="fixed w-full bg-[#010101] border-b border-[#d02b27] z-50">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-[#d02b27]">MyPortfolio</h1>
-      <ul class="flex space-x-6">
-        <li><a href="#home" class="hover:text-[#d02b27]">Home</a></li>
-        <li><a href="#about" class="hover:text-[#d02b27]">About</a></li>
-        <li><a href="#projects" class="hover:text-[#d02b27]">Projects</a></li>
-        <li><a href="#contact" class="hover:text-[#d02b27]">Contact</a></li>
-      </ul>
+<!-- NAVBAR -->
+<nav class="fixed w-full bg-[#EEEEEE] border-b border-[#2FA084] z-50">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-[#2FA084]">MyPortfolio</h1>
+    <ul class="flex space-x-6">
+      <li><a href="#home" class="hover:text-[#2FA084]">Home</a></li>
+      <li><a href="#about" class="hover:text-[#2FA084]">About</a></li>
+      <li><a href="#projects" class="hover:text-[#2FA084]">Projects</a></li>
+      <li><a href="#articles" class="hover:text-[#2FA084]">Articles</a></li>
+      <li><a href="#contact" class="hover:text-[#2FA084]">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="h-screen flex items-center justify-center text-center px-4">
+  <div class="flex flex-col items-center">
+
+    <img src="src/img/profil/profil.jpg"
+      class="w-[250px] h-[250px] rounded-full mb-6 object-cover border-4 border-[#2FA084] shadow-lg">
+
+    <h2 class="text-4xl md:text-6xl font-bold mb-4">
+      Hi, I am <span class="text-[#2FA084]">Farel Lazuardi Azra</span>
+    </h2>
+
+    <p class="text-gray-600 mb-6">
+      Political Science Graduate | Interested in Elections, Government Relations, Public Policy Analyst, Political Marketing or Consulting, CSR | Experienced in Legal Administration, Electoral Dispute Resolution, and Inter-Agency Coordination
+    </p>
+
+    <button onclick="scrollToSection('projects')"
+      class="bg-[#2FA084] text-white px-6 py-2 rounded-lg hover:opacity-80">
+      Lihat Project
+    </button>
+  </div>
+</section>
+
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- 🔽 FIX UKURAN GAMBAR -->
+    <div class="flex justify-center">
+      <img src="src/img/about/about.png"
+        class="w-[350px] md:w-[400px] rounded-2xl shadow-lg object-cover">
     </div>
-  </nav>
 
-  <!-- HERO -->
-  <section id="home" class="h-screen flex items-center justify-center text-center px-4">
-    <div class="flex flex-col items-center">
-      <img src="src/img/profil/profil.jpg"
-        class="w-[240px] h-[240px] rounded-full mb-6 object-cover border-4 border-[#d02b27] shadow-lg">
+    <div>
+      <h3 class="text-3xl font-bold mb-6 text-[#2FA084]">About Me</h3>
 
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">
-        Halo, Saya <span class="text-[#d02b27]">Farel</span>
-      </h2>
-
-      <p class="text-gray-300 mb-6">
-        Policy Analyst | UI/UX Enthusiast
+      <!-- 🔽 TAMBAH text-justify -->
+      <p class="text-gray-600 mb-4 text-justify">
+        Political Science graduate from Universitas Airlangga (GPA 3.59) with professional experience in legal administration at Bawaslu East Java. I specialize in electoral dispute resolution, managing high-stakes documentation for the Constitutional Court, and inter-agency coordination. My technical expertise encompasses legal analysis, Microsoft Office, supported with good English proficiency and multimedia editing skills in Canva, CapCut, and Adobe Premiere. I am a meticulous team leader with a focus on analytical problem-solving.
       </p>
 
-      <button onclick="scrollToSection('projects')"
-        class="bg-[#d02b27] px-6 py-2 rounded-lg hover:opacity-80 transition">
-        Lihat Project
-      </button>
+      <p class="text-gray-600 mb-4 text-justify">
+        During my tenure at the General Election Supervisory Agency of East Java, I was entrusted with reviewing electoral complaints, preparing travel accountability reports, drafting legal memos, and collaborating with stakeholders such as the Regional Police and Prosecutor’s Office through the Integrated Law Enforcement Center (Sentra Gakkumdu).
+      </p>
+
+      <p class="text-gray-600 mb-4 text-justify">
+        Actively involved in leadership and administrative roles within student organizations, I have coordinated multi-departmental events, managed professional development programs, and strengthened partnerships through effective communication and project management.
+      </p>
+
+      <p class="text-gray-600 text-justify">
+        I am particularly interested in government relations, public policy analysis, and political consulting. I aspire to contribute to initiatives that connect institutional governance with real-world impact, driven by critical thinking, collaboration, and solution-oriented research.
+      </p>
     </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="py-20 bg-[#111111]">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+  </div>
+</section>
 
-      <img src="src/img/about/about.jpg" class="rounded-2xl shadow-lg">
+<!-- PROJECTS -->
+<section id="projects" class="py-20">
+  <h3 class="text-3xl font-bold text-center mb-10 text-[#2FA084]">Projects</h3>
 
-      <div>
-        <h3 class="text-3xl font-bold mb-6 text-[#d02b27]">Tentang Saya</h3>
-        <p class="text-gray-300 mb-4">
-          Saya adalah seorang policy analyst yang tertarik pada UI modern dan interaktif menggunakan TailwindCSS dan JavaScript.
-        </p>
+  <div class="relative h-[480px] flex items-center justify-center overflow-hidden">
+    <div id="slider" class="relative w-full h-full">
 
-        <div class="flex flex-wrap gap-3">
-          <span class="bg-[#d02b27] px-3 py-1 rounded">HTML</span>
-          <span class="bg-[#d02b27] px-3 py-1 rounded">CSS</span>
-          <span class="bg-[#d02b27] px-3 py-1 rounded">JavaScript</span>
-          <span class="bg-[#d02b27] px-3 py-1 rounded">Tailwind</span>
+      <div class="project-item w-[300px]">
+        <div class="bg-white rounded-2xl p-4 shadow-xl text-center">
+          <img src="src/img/project/project1.png"
+            class="w-full h-[220px] object-cover pos-top rounded-xl mb-3 mx-auto">
+          <h4 class="font-bold">Research Assistant</h4>
+          <p class="text-sm text-gray-500">Research Assistant for a published study on women’s empowerment in rural tourism development in Malang, Indonesia. Conducted interview transcription and supported qualitative analysis of women’s roles in village governance.</p>
+        </div>
+      </div>
+
+      <div class="project-item w-[300px]">
+        <div class="bg-white rounded-2xl p-4 shadow-xl text-center">
+          <img src="src/img/project/project2.png"
+            class="w-full h-[220px] object-cover pos-center rounded-xl mb-3 mx-auto">
+          <h4 class="font-bold">Ministry of Student Synergy</h4>
+          <p class="text-sm text-gray-500">Staff at the Ministry of Student Synergy, Airlangga University Student Executive Board, focusing on developing student talents and engagement. Managed correspondence and event administration, built media partnerships, and led cross-division collaboration for large-scale programs involving over 100+ participants.</p>
+        </div>
+      </div>
+
+      <div class="project-item w-[300px]">
+        <div class="bg-white rounded-2xl p-4 shadow-xl text-center">
+          <img src="src/img/project/project3.png"
+            class="w-full h-[220px] object-cover pos-bottom rounded-xl mb-3 mx-auto">
+          <h4 class="font-bold">Ministry of Career Development</h4>
+          <p class="text-sm text-gray-500">Staff at the Ministry of Career Development, Airlangga University Student Executive Board, supporting career initiatives for students. Coordinated large-scale events, including job preparation programs and workshops, while managing partnerships and event execution for over 200 participants.</p>
+        </div>
+      </div>
+
+      <div class="project-item w-[300px]">
+        <div class="bg-white rounded-2xl p-4 shadow-xl text-center">
+          <img src="src/img/project/project4.png"
+            class="w-full h-[220px] object-cover pos-bottom rounded-xl mb-3 mx-auto">
+          <h4 class="font-bold">Airlangga University Political Science Student Association</h4>
+          <p class="text-sm text-gray-500">Served as the representative of the 2021 Political Science cohort in HIMAPOL UNAIR, overseeing organizational performance through monitoring and evaluation of work programs. Collaborated with leadership to formulate strategic policy recommendations and acted as a liaison by collecting and representing student aspirations.</p>
+        </div>
+      </div>
+
+    <div class="project-item w-[300px]">
+        <div class="bg-white rounded-2xl p-4 shadow-xl text-center">
+          <img src="src/img/project/project5.png"
+            class="w-full h-[220px] object-cover pos-bottom rounded-xl mb-3 mx-auto">
+          <h4 class="font-bold">General Election Supervisory Agency of East Java </h4>
+          <p class="text-sm text-gray-500">Supported election oversight at Bawaslu East Java by assisting in monitoring processes, handling administrative reports, and preparing dispute documentation for the Constitutional Court. Gained experience in electoral governance, legal analysis, and inter-agency coordination.</p>
         </div>
       </div>
 
     </div>
-  </section>
 
-  <!-- PROJECTS (CENTER CAROUSEL) -->
-  <section id="projects" class="py-20">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-10 text-[#d02b27]">Projects</h3>
+    <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-[#2FA084] text-white px-3 py-2 rounded-full">◀</button>
+    <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-[#2FA084] text-white px-3 py-2 rounded-full">▶</button>
+  </div>
+</section>
 
-      <div class="relative h-[420px] flex items-center justify-center overflow-hidden">
+<!-- ARTICLES -->
+<section id="articles" class="py-20 bg-white">
+  <h3 class="text-3xl font-bold text-center mb-10 text-[#2FA084]">Articles</h3>
 
-        <div id="slider" class="relative w-full h-full">
+  <div class="relative h-[480px] flex items-center justify-center overflow-hidden">
+    <div id="articleSlider" class="relative w-full h-full">
 
-          <!-- ITEM 1 -->
-          <div class="project-item w-[60%]">
-            <div class="bg-[#111111] rounded-2xl p-4 shadow-xl">
-              <img src="src/img/project/project1.jpg" class="rounded-xl mb-4">
-              <h4 class="font-bold text-lg">Project 1</h4>
-            </div>
-          </div>
-
-          <!-- ITEM 2 -->
-          <div class="project-item w-[60%]">
-            <div class="bg-[#111111] rounded-2xl p-4 shadow-xl">
-              <img src="src/img/project/project2.jpg" class="rounded-xl mb-4">
-              <h4 class="font-bold text-lg">Project 2</h4>
-            </div>
-          </div>
-
-          <!-- ITEM 3 -->
-          <div class="project-item w-[60%]">
-            <div class="bg-[#111111] rounded-2xl p-4 shadow-xl">
-              <img src="src/img/project/project3.jpg" class="rounded-xl mb-4">
-              <h4 class="font-bold text-lg">Project 3</h4>
-            </div>
-          </div>
-
-          <!-- ITEM 4 -->
-          <div class="project-item w-[60%]">
-            <div class="bg-[#111111] rounded-2xl p-4 shadow-xl">
-              <img src="src/img/project/project4.jpg" class="rounded-xl mb-4">
-              <h4 class="font-bold text-lg">Project 4</h4>
-            </div>
-          </div>
-
-          <!-- ITEM 5 -->
-          <div class="project-item w-[60%]">
-            <div class="bg-[#111111] rounded-2xl p-4 shadow-xl">
-              <img src="src/img/project/project5.jpg" class="rounded-xl mb-4">
-              <h4 class="font-bold text-lg">Project 5</h4>
-            </div>
-          </div>
-
-          <!-- ITEM 6 -->
-          <div class="project-item w-[60%]">
-            <div class="bg-[#111111] rounded-2xl p-4 shadow-xl">
-              <img src="src/img/project/project6.jpg" class="rounded-xl mb-4">
-              <h4 class="font-bold text-lg">Project 6</h4>
-            </div>
-          </div>
-
+      <div class="article-item w-[300px]">
+        <div class="bg-[#f8f8f8] p-4 rounded-xl shadow text-center">
+          <img src="src/img/articles/articles1.jpg"
+            class="w-full h-[220px] object-cover pos-top rounded-lg mb-3 mx-auto">
+          <h4 class="font-bold">Artikel 1</h4>
+          <p class="text-sm text-gray-500">Ringkasan artikel...</p>
         </div>
-
-        <!-- BUTTON -->
-        <button onclick="prevSlide()"
-          class="absolute left-2 top-1/2 -translate-y-1/2 bg-[#d02b27] px-3 py-2 rounded-full z-50">
-          ◀
-        </button>
-
-        <button onclick="nextSlide()"
-          class="absolute right-2 top-1/2 -translate-y-1/2 bg-[#d02b27] px-3 py-2 rounded-full z-50">
-          ▶
-        </button>
-
       </div>
+
+      <div class="article-item w-[300px]">
+        <div class="bg-[#f8f8f8] p-4 rounded-xl shadow text-center">
+          <img src="src/img/articles/articles2.jpg"
+            class="w-full h-[220px] object-cover pos-left rounded-lg mb-3 mx-auto">
+          <h4 class="font-bold">Artikel 2</h4>
+          <p class="text-sm text-gray-500">Ringkasan artikel...</p>
+        </div>
+      </div>
+
+      <div class="article-item w-[300px]">
+        <div class="bg-[#f8f8f8] p-4 rounded-xl shadow text-center">
+          <img src="src/img/articles/articles3.jpg"
+            class="w-full h-[220px] object-cover pos-bottom rounded-lg mb-3 mx-auto">
+          <h4 class="font-bold">Artikel 3</h4>
+          <p class="text-sm text-gray-500">Ringkasan artikel...</p>
+        </div>
+      </div>
+
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="py-20 bg-[#111111] text-center">
-    <h3 class="text-3xl font-bold mb-6 text-[#d02b27]">Contact</h3>
-    <p class="text-gray-400">Email: farel@email.com</p>
-  </section>
+    <button onclick="prevArticle()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-[#2FA084] text-white px-3 py-2 rounded-full">◀</button>
+    <button onclick="nextArticle()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-[#2FA084] text-white px-3 py-2 rounded-full">▶</button>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="py-6 text-center border-t border-[#d02b27]">
-    <p class="text-gray-500">© 2026 Farel</p>
-  </footer>
+<!-- CONTACT (SUDAH BALIK & LENGKAP) -->
+<section id="contact" class="py-20 text-center">
+  <h3 class="text-3xl font-bold mb-4 text-[#2FA084]">Contact & Social</h3>
 
-  <!-- JS CENTER STAGE CAROUSEL -->
-  <script>
-    function scrollToSection(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  <p class="mb-10 text-gray-600">
+    Interested in collaboration, research discussion, or professional opportunities?
+  </p>
+
+  <div class="flex flex-wrap justify-center gap-12 items-center">
+
+    <a href="mailto:farellaz14@gmail.com"
+      class="flex flex-col items-center gap-2 hover:scale-110 transition">
+      <img src="src/img/icon/gmail.png" class="w-10 h-10">
+      <span class="text-[#2FA084] text-sm">Email</span>
+    </a>
+
+    <div class="flex flex-col items-center gap-2">
+      <span class="text-2xl">📞</span>
+      <span class="text-sm text-gray-700">+628974750080</span>
+    </div>
+
+    <a href="https://www.instagram.com/farellaz/" target="_blank"
+      class="flex flex-col items-center gap-2 hover:scale-110 transition">
+      <img src="src/img/icon/instagram.png" class="w-10 h-10">
+      <span class="text-[#2FA084] text-sm">Instagram</span>
+    </a>
+
+    <a href="https://farellaz.github.io/farellaz/" target="_blank"
+      class="flex flex-col items-center gap-2 hover:scale-110 transition">
+      <img src="src/img/icon/github.png" class="w-10 h-10">
+      <span class="text-[#2FA084] text-sm">GitHub</span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/farellaz/" target="_blank"
+      class="flex flex-col items-center gap-2 hover:scale-110 transition">
+      <img src="src/img/icon/linkedin.png" class="w-10 h-10">
+      <span class="text-[#2FA084] text-sm">LinkedIn</span>
+    </a>
+
+  </div>
+</section>
+
+<script>
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+
+// PROJECT
+const items = document.querySelectorAll('.project-item');
+let index = 0;
+
+function updateSlider() {
+  const total = items.length;
+
+  items.forEach((item, i) => {
+    item.style.opacity = "0";
+    item.style.transform = "translate(-50%, -50%) scale(0.7)";
+
+    if (i === index) {
+      item.style.opacity = "1";
+      item.style.transform = "translate(-50%, -50%) scale(1)";
+    } else if (i === (index - 1 + total) % total) {
+      item.style.opacity = "0.6";
+      item.style.transform = "translate(-160%, -50%) scale(0.85)";
+    } else if (i === (index + 1) % total) {
+      item.style.opacity = "0.6";
+      item.style.transform = "translate(60%, -50%) scale(0.85)";
     }
+  });
+}
 
-    const items = document.querySelectorAll('.project-item');
-    let index = 0;
+// ARTICLE
+const articleItems = document.querySelectorAll('.article-item');
+let articleIndex = 0;
 
-    function updateSlider() {
-      const total = items.length;
+function updateArticleSlider() {
+  const total = articleItems.length;
 
-      items.forEach((item, i) => {
+  articleItems.forEach((item, i) => {
+    item.style.opacity = "0";
+    item.style.transform = "translate(-50%, -50%) scale(0.7)";
 
-        // reset
-        item.style.opacity = "0";
-        item.style.transform = "translate(-50%, -50%) scale(0.7)";
-        item.style.zIndex = "0";
-        item.style.filter = "blur(2px)";
-
-        // CENTER
-        if (i === index) {
-          item.style.opacity = "1";
-          item.style.transform = "translate(-50%, -50%) scale(1)";
-          item.style.zIndex = "30";
-          item.style.filter = "blur(0px)";
-        }
-
-        // LEFT
-        else if (i === (index - 1 + total) % total) {
-          item.style.opacity = "0.8";
-          item.style.transform = "translate(-120%, -50%) scale(0.85)";
-          item.style.zIndex = "20";
-          item.style.filter = "blur(0px)";
-        }
-
-        // RIGHT
-        else if (i === (index + 1) % total) {
-          item.style.opacity = "0.8";
-          item.style.transform = "translate(20%, -50%) scale(0.85)";
-          item.style.zIndex = "20";
-          item.style.filter = "blur(0px)";
-        }
-      });
+    if (i === articleIndex) {
+      item.style.opacity = "1";
+      item.style.transform = "translate(-50%, -50%) scale(1)";
+    } else if (i === (articleIndex - 1 + total) % total) {
+      item.style.opacity = "0.6";
+      item.style.transform = "translate(-150%, -50%) scale(0.85)";
+    } else if (i === (articleIndex + 1) % total) {
+      item.style.opacity = "0.6";
+      item.style.transform = "translate(50%, -50%) scale(0.85)";
     }
+  });
+}
 
-    function nextSlide() {
-      index = (index + 1) % items.length;
-      updateSlider();
-    }
+function nextSlide() { index = (index + 1) % items.length; updateSlider(); }
+function prevSlide() { index = (index - 1 + items.length) % items.length; updateSlider(); }
 
-    function prevSlide() {
-      index = (index - 1 + items.length) % items.length;
-      updateSlider();
-    }
+function nextArticle() { articleIndex = (articleIndex + 1) % articleItems.length; updateArticleSlider(); }
+function prevArticle() { articleIndex = (articleIndex - 1 + articleItems.length) % articleItems.length; updateArticleSlider(); }
 
-    // AUTO SLIDE 3 DETIK
-    setInterval(() => {
-      nextSlide();
-    }, 3000);
+setInterval(nextSlide, 3000);
+setInterval(nextArticle, 3500);
 
-    updateSlider();
-  </script>
+updateSlider();
+updateArticleSlider();
+</script>
 
 </body>
 </html>
