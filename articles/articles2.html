@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analisis Kebijakan Publik dalam Menjawab Masalah Sosial</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F5F5F5] text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-emerald-600">ArtikelKu</h1>
+
+      <ul class="hidden md:flex gap-6 text-sm font-medium">
+        <li><a href="../index.html" class="hover:text-emerald-600">Home</a></li>
+        <li><a href="../index.html#articles" class="hover:text-emerald-600">Artikel</a></li>
+        <li><a href="#" class="hover:text-emerald-600">Kategori</a></li>
+        <li><a href="#" class="hover:text-emerald-600">Tentang</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="bg-emerald-600 text-white py-20">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        Ruang Baca dan Opini
+      </h2>
+      <p class="max-w-2xl mx-auto text-emerald-50">
+        Kumpulan artikel, opini, dan tulisan seputar politik, kebijakan publik,
+        sosial, dan isu-isu pemerintahan.
+      </p>
+    </div>
+  </header>
+
+  <!-- Featured Article -->
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+
+      <!-- BAGIAN ATAS: GAMBAR + PARAGRAF PERTAMA -->
+      <div class="grid md:grid-cols-2">
+        <div class="bg-gray-100 flex items-center justify-center p-4">
+          <img 
+            src="/src/img/articles/articles2/kebijakan-publik.jpeg"
+            alt="Analisis kebijakan publik"
+            class="w-full max-w-[520px] h-auto max-h-[430px] object-contain rounded-xl"
+          />
+        </div>
+
+        <div class="p-8 flex flex-col justify-center">
+          <span class="text-sm text-emerald-600 font-semibold mb-2">
+            Kebijakan Publik
+          </span>
+
+          <h3 class="text-3xl font-bold mb-4">
+            Analisis Kebijakan Publik dalam Menjawab Masalah Sosial
+          </h3>
+
+          <div class="text-gray-600 leading-relaxed space-y-4 mb-6 text-justify">
+            <p>
+              Kebijakan publik merupakan salah satu instrumen penting dalam mengatur kehidupan
+              masyarakat dan menjawab berbagai persoalan sosial. Dalam praktiknya, kebijakan
+              tidak hanya berbentuk aturan tertulis, tetapi juga mencerminkan cara pemerintah
+              memahami masalah, menentukan prioritas, serta memilih strategi untuk mencapai
+              tujuan tertentu. Oleh karena itu, analisis kebijakan publik menjadi penting agar
+              setiap keputusan yang diambil tidak hanya bersifat administratif, tetapi juga
+              mampu memberikan dampak nyata bagi masyarakat.
+            </p>
+          </div>
+
+          <button 
+            id="readMoreBtn"
+            onclick="showFeaturedArticle()"
+            class="bg-emerald-600 text-white px-5 py-2 rounded-lg w-fit hover:bg-emerald-700">
+            Baca Selengkapnya
+          </button>
+        </div>
+      </div>
+
+      <!-- BAGIAN LANJUTAN ARTIKEL -->
+      <div id="moreParagraphs" class="hidden px-8 pb-8 pt-2 text-gray-600 leading-relaxed space-y-4 text-justify">
+        <p>
+          Dalam proses perumusan kebijakan, pemerintah perlu memahami akar masalah secara
+          mendalam. Banyak persoalan sosial tidak dapat diselesaikan hanya dengan pendekatan
+          satu arah, karena masalah seperti kemiskinan, pendidikan, kesehatan, pengangguran,
+          dan ketimpangan sosial memiliki penyebab yang kompleks. Kebijakan yang baik harus
+          didasarkan pada data, riset, serta pemahaman terhadap kondisi masyarakat yang menjadi
+          sasaran kebijakan tersebut.
+        </p>
+
+        <p>
+          Salah satu tantangan utama dalam kebijakan publik adalah kesenjangan antara perumusan
+          dan implementasi. Sebuah kebijakan bisa terlihat ideal di atas kertas, tetapi belum
+          tentu berjalan efektif ketika diterapkan di lapangan. Hambatan birokrasi, keterbatasan
+          anggaran, kurangnya koordinasi antar-lembaga, serta rendahnya partisipasi masyarakat
+          dapat membuat tujuan kebijakan tidak tercapai secara maksimal.
+        </p>
+
+        <p>
+          Karena itu, evaluasi kebijakan menjadi bagian yang tidak kalah penting. Evaluasi
+          diperlukan untuk melihat apakah kebijakan benar-benar menjawab masalah yang ingin
+          diselesaikan, apakah manfaatnya dirasakan oleh masyarakat, dan apakah terdapat dampak
+          yang tidak diharapkan. Melalui evaluasi, pemerintah dapat memperbaiki desain kebijakan
+          dan menyesuaikannya dengan kebutuhan masyarakat yang terus berubah.
+        </p>
+
+        <p>
+          Partisipasi publik juga memiliki peran penting dalam proses kebijakan. Masyarakat
+          tidak seharusnya hanya menjadi objek kebijakan, tetapi juga dapat dilibatkan sebagai
+          sumber informasi, pengawas, dan penerima manfaat. Keterlibatan masyarakat dapat membantu
+          pemerintah memahami kebutuhan riil di lapangan serta meningkatkan rasa kepemilikan
+          terhadap kebijakan yang dijalankan.
+        </p>
+
+        <p>
+          Di era digital, analisis kebijakan publik juga semakin dipengaruhi oleh perkembangan
+          teknologi dan keterbukaan informasi. Data digital, media sosial, dan sistem pelayanan
+          berbasis teknologi dapat membantu pemerintah membaca aspirasi publik secara lebih cepat.
+          Namun, penggunaan teknologi juga harus diimbangi dengan etika, perlindungan data, dan
+          kemampuan memilah informasi yang valid agar kebijakan tidak dibangun di atas asumsi
+          yang keliru.
+        </p>
+
+        <p>
+          Pada akhirnya, kebijakan publik yang efektif adalah kebijakan yang mampu menghubungkan
+          tujuan pemerintah dengan kebutuhan masyarakat. Kebijakan tidak cukup hanya dibuat untuk
+          memenuhi prosedur, tetapi harus dirancang secara inklusif, dijalankan secara konsisten,
+          dan dievaluasi secara terbuka. Dengan demikian, kebijakan publik dapat menjadi alat
+          penting untuk menciptakan tata kelola yang lebih adil, responsif, dan berdampak nyata.
+        </p>
+
+        <div class="pt-4">
+          <button 
+            id="showLessBtn"
+            onclick="hideFeaturedArticle()"
+            class="bg-emerald-600 text-white px-5 py-2 rounded-lg hover:bg-emerald-700">
+            Tampilkan Lebih Sedikit
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Article List -->
+  <main class="max-w-6xl mx-auto px-4 pb-16">
+    <h3 class="text-3xl font-bold mb-8 text-center">Artikel Terbaru</h3>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-1 transition">
+        <div class="w-full h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+          <img 
+            src="/src/img/articles/articles1/demokrasi.jpeg"
+            class="w-full h-full object-cover"
+            alt="Demokrasi dan anak muda"
+          />
+        </div>
+
+        <div class="p-6">
+          <span class="text-sm text-emerald-600 font-semibold">Politik</span>
+          <h4 class="text-xl font-bold mt-2 mb-3">
+            Demokrasi dan Tantangan Partisipasi Anak Muda
+          </h4>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Membahas peran generasi muda dalam memperkuat demokrasi melalui
+            partisipasi politik dan literasi digital.
+          </p>
+          <a href="articles1.html" class="text-emerald-600 font-semibold hover:underline">
+            Baca Artikel →
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-1 transition">
+        <div class="w-full h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+          <img 
+            src="/src/img/articles/articles2/kebijakan-publik.jpeg"
+            class="w-full h-full object-cover"
+            alt="Analisis kebijakan publik"
+          />
+        </div>
+
+        <div class="p-6">
+          <span class="text-sm text-emerald-600 font-semibold">Kebijakan Publik</span>
+          <h4 class="text-xl font-bold mt-2 mb-3">
+            Analisis Kebijakan Publik dalam Menjawab Masalah Sosial
+          </h4>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Menjelaskan pentingnya analisis, implementasi, dan evaluasi kebijakan
+            dalam menyelesaikan persoalan masyarakat.
+          </p>
+          <a href="articles2.html" class="text-emerald-600 font-semibold hover:underline">
+            Baca Artikel →
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-1 transition">
+        <div class="w-full h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1504711434969-e33886168f5c"
+            class="w-full h-full object-cover"
+            alt="Media digital dan opini publik"
+          />
+        </div>
+
+        <div class="p-6">
+          <span class="text-sm text-emerald-600 font-semibold">Opini</span>
+          <h4 class="text-xl font-bold mt-2 mb-3">
+            Media Digital dan Opini Publik
+          </h4>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Mengulas pengaruh media digital terhadap pembentukan opini publik
+            dalam era informasi cepat.
+          </p>
+          <a href="articles3.html" class="text-emerald-600 font-semibold hover:underline">
+            Baca Artikel →
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Newsletter -->
+  <section class="bg-white py-14">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-3">Dapatkan Artikel Terbaru</h3>
+      <p class="text-gray-600 mb-6">
+        Masukkan email kamu untuk menerima update tulisan terbaru.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <input 
+          type="email"
+          placeholder="Alamat email"
+          class="px-4 py-3 border rounded-lg w-full sm:w-96 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+        />
+        <button class="bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8 text-center">
+    <p>&copy; 2025 ArtikelKu. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showFeaturedArticle() {
+      const moreParagraphs = document.getElementById("moreParagraphs");
+      const readMoreBtn = document.getElementById("readMoreBtn");
+
+      moreParagraphs.classList.remove("hidden");
+      readMoreBtn.classList.add("hidden");
+    }
+
+    function hideFeaturedArticle() {
+      const moreParagraphs = document.getElementById("moreParagraphs");
+      const readMoreBtn = document.getElementById("readMoreBtn");
+
+      moreParagraphs.classList.add("hidden");
+      readMoreBtn.classList.remove("hidden");
+
+      document.querySelector("section").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  </script>
+
+</body>
+</html>

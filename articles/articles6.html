@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Artikel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F5F5F5] text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-emerald-600">ArtikelKu</h1>
+
+      <ul class="hidden md:flex gap-6 text-sm font-medium">
+        <li><a href="#" class="hover:text-emerald-600">Home</a></li>
+        <li><a href="#" class="hover:text-emerald-600">Artikel</a></li>
+        <li><a href="#" class="hover:text-emerald-600">Kategori</a></li>
+        <li><a href="#" class="hover:text-emerald-600">Tentang</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="bg-emerald-600 text-white py-20">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        Ruang Baca dan Opini
+      </h2>
+      <p class="max-w-2xl mx-auto text-emerald-50">
+        Kumpulan artikel, opini, dan tulisan seputar politik, kebijakan publik,
+        sosial, dan isu-isu pemerintahan.
+      </p>
+    </div>
+  </header>
+
+  <!-- Featured Article -->
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden grid md:grid-cols-2">
+      <img 
+        src="https://images.unsplash.com/photo-1495020689067-958852a7765e"
+        alt="Artikel utama"
+        class="w-full h-72 md:h-full object-cover"
+      />
+
+      <div class="p-8 flex flex-col justify-center">
+        <span class="text-sm text-emerald-600 font-semibold mb-2">
+          Artikel Pilihan
+        </span>
+
+        <h3 class="text-3xl font-bold mb-4">
+          Demokrasi dan Tantangan Partisipasi Anak Muda
+        </h3>
+
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Artikel ini membahas bagaimana generasi muda berperan dalam memperkuat
+          demokrasi melalui partisipasi politik, literasi digital, dan kepedulian
+          terhadap kebijakan publik.
+        </p>
+
+        <a href="#" class="bg-emerald-600 text-white px-5 py-2 rounded-lg w-fit hover:bg-emerald-700">
+          Baca Selengkapnya
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article List -->
+  <main class="max-w-6xl mx-auto px-4 pb-16">
+    <h3 class="text-3xl font-bold mb-8 text-center">Artikel Terbaru</h3>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-1 transition">
+        <img 
+          src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620"
+          class="w-full h-48 object-cover"
+          alt="Artikel"
+        />
+
+        <div class="p-6">
+          <span class="text-sm text-emerald-600 font-semibold">Politik</span>
+          <h4 class="text-xl font-bold mt-2 mb-3">
+            Peran Pemuda dalam Politik Lokal
+          </h4>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Membahas pentingnya keterlibatan pemuda dalam proses politik dan
+            pengambilan keputusan di tingkat lokal.
+          </p>
+          <a href="#" class="text-emerald-600 font-semibold hover:underline">
+            Baca Artikel →
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-1 transition">
+        <img 
+          src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
+          class="w-full h-48 object-cover"
+          alt="Artikel"
+        />
+
+        <div class="p-6">
+          <span class="text-sm text-emerald-600 font-semibold">Kebijakan Publik</span>
+          <h4 class="text-xl font-bold mt-2 mb-3">
+            Analisis Kebijakan Sosial di Indonesia
+          </h4>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Meninjau bagaimana kebijakan sosial dirancang, dijalankan, dan
+            dievaluasi untuk masyarakat.
+          </p>
+          <a href="#" class="text-emerald-600 font-semibold hover:underline">
+            Baca Artikel →
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-1 transition">
+        <img 
+          src="https://images.unsplash.com/photo-1504711434969-e33886168f5c"
+          class="w-full h-48 object-cover"
+          alt="Artikel"
+        />
+
+        <div class="p-6">
+          <span class="text-sm text-emerald-600 font-semibold">Opini</span>
+          <h4 class="text-xl font-bold mt-2 mb-3">
+            Media Digital dan Opini Publik
+          </h4>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Mengulas pengaruh media digital terhadap pembentukan opini publik
+            dalam era informasi cepat.
+          </p>
+          <a href="#" class="text-emerald-600 font-semibold hover:underline">
+            Baca Artikel →
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Newsletter -->
+  <section class="bg-white py-14">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-3">Dapatkan Artikel Terbaru</h3>
+      <p class="text-gray-600 mb-6">
+        Masukkan email kamu untuk menerima update tulisan terbaru.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <input 
+          type="email"
+          placeholder="Alamat email"
+          class="px-4 py-3 border rounded-lg w-full sm:w-96 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+        />
+        <button class="bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8 text-center">
+    <p>&copy; 2025 ArtikelKu. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

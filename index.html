@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Farel</title>
+  <title id="pageTitle">Portofolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -28,6 +28,7 @@
     .pos-y-25 { object-position: center 25%; }
     .pos-y-30 { object-position: center 30%; }
     .pos-y-35 { object-position: center 35%; }
+    .pos-y-38 { object-position: center 38%; }
     .pos-y-40 { object-position: center 40%; }
     .pos-y-45 { object-position: center 45%; }
     .pos-y-50 { object-position: center 50%; }
@@ -55,8 +56,9 @@
 <!-- NAVBAR -->
 <nav class="fixed w-full bg-[#EEEEEE] border-b border-[#2FA084] z-50">
   <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-    <h1 class="text-xl font-bold text-[#2FA084]">MyPortfolio</h1>
-    <ul class="flex space-x-6">
+    <h1 id="navbarTitle" class="text-xl font-bold text-[#2FA084]">MyPortfolio</h1>
+
+    <ul class="hidden md:flex space-x-6">
       <li><a href="#home" class="hover:text-[#2FA084]">Home</a></li>
       <li><a href="#about" class="hover:text-[#2FA084]">About</a></li>
       <li><a href="#projects" class="hover:text-[#2FA084]">Projects</a></li>
@@ -70,16 +72,16 @@
 <section id="home" class="h-screen flex items-center justify-center text-center px-4 pt-10">
   <div class="flex flex-col items-center">
 
-    <img src="src/img/profil/profil.jpg"
+    <img id="heroImage"
+      src=""
+      alt="Profile"
       class="w-[220px] h-[220px] rounded-full mb-5 mt-6 object-cover object-[center_15%] border-4 border-[#2FA084] shadow-lg">
 
     <h2 class="text-4xl md:text-6xl font-bold mb-3">
-      Hi, I am <span class="text-[#2FA084]">Farel Lazuardi Azra</span>
+      Hi, I am <span id="heroName" class="text-[#2FA084]"></span>
     </h2>
 
-    <p class="text-gray-600 mb-6 max-w-2xl">
-      Political Science Graduate | Interested in Elections, Government Relations, Public Policy Analyst, Political Marketing or Consulting, CSR | Experienced in Legal Administration, Electoral Dispute Resolution, and Inter-Agency Coordination
-    </p>
+    <p id="heroDescription" class="text-gray-600 mb-6 max-w-2xl"></p>
 
     <button onclick="scrollToSection('projects')"
       class="bg-[#2FA084] text-white px-6 py-2 rounded-lg hover:opacity-80">
@@ -94,28 +96,15 @@
   <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
 
     <div class="flex justify-center">
-      <img src="src/img/about/about.png"
+      <img id="aboutImage"
+        src=""
+        alt="About"
         class="w-[350px] md:w-[400px] rounded-2xl shadow-lg object-cover">
     </div>
 
     <div>
       <h3 class="text-3xl font-bold mb-6 text-[#2FA084]">About Me</h3>
-
-      <p class="text-gray-600 mb-4 text-justify">
-        Political Science graduate from Universitas Airlangga (GPA 3.59) with professional experience in legal administration at Bawaslu East Java. I specialize in electoral dispute resolution, managing high-stakes documentation for the Constitutional Court, and inter-agency coordination. My technical expertise encompasses legal analysis, Microsoft Office, supported with good English proficiency and multimedia editing skills in Canva, CapCut, and Adobe Premiere. I am a meticulous team leader with a focus on analytical problem-solving.
-      </p>
-
-      <p class="text-gray-600 mb-4 text-justify">
-        During my tenure at the General Election Supervisory Agency of East Java, I was entrusted with reviewing electoral complaints, preparing travel accountability reports, drafting legal memos, and collaborating with stakeholders such as the Regional Police and Prosecutor’s Office through the Integrated Law Enforcement Center (Sentra Gakkumdu).
-      </p>
-
-      <p class="text-gray-600 mb-4 text-justify">
-        Actively involved in leadership and administrative roles within student organizations, I have coordinated multi-departmental events, managed professional development programs, and strengthened partnerships through effective communication and project management.
-      </p>
-
-      <p class="text-gray-600 text-justify">
-        I am particularly interested in government relations, public policy analysis, and political consulting. I aspire to contribute to initiatives that connect institutional governance with real-world impact, driven by critical thinking, collaboration, and solution-oriented research.
-      </p>
+      <div id="aboutText"></div>
     </div>
 
   </div>
@@ -126,69 +115,7 @@
   <h3 class="text-3xl font-bold text-center mb-10 text-[#2FA084]">Experience & Projects</h3>
 
   <div class="relative h-[560px] flex items-center justify-center overflow-hidden">
-    <div id="slider" class="relative w-full h-full">
-
-      <div class="project-item w-[360px]">
-        <div class="text-center">
-          <!-- UBAH POSISI FOTO DI SINI: pos-y-35 -->
-          <img src="src/img/project/project1.png"
-            class="w-full h-[250px] object-cover pos-y-35 rounded-2xl mb-6 mx-auto shadow-lg">
-          <h4 class="font-bold text-2xl mb-3">Research Assistant</h4>
-          <p class="text-base text-gray-600 leading-relaxed">
-            Research Assistant for a published study on women’s empowerment in rural tourism development in Malang, Indonesia. Conducted interview transcription and supported qualitative analysis of women’s roles in village governance.
-          </p>
-        </div>
-      </div>
-
-      <div class="project-item w-[360px]">
-        <div class="text-center">
-          <!-- UBAH POSISI FOTO DI SINI: pos-y-45 -->
-          <img src="src/img/project/project2.png"
-            class="w-full h-[250px] object-cover pos-y-45 rounded-2xl mb-6 mx-auto shadow-lg">
-          <h4 class="font-bold text-2xl mb-3">Ministry of Student Synergy</h4>
-          <p class="text-base text-gray-600 leading-relaxed">
-            Staff at the Ministry of Student Synergy, Airlangga University Student Executive Board, focusing on developing student talents and engagement. Managed correspondence and event administration, built media partnerships, and led cross-division collaboration for large-scale programs involving over 100+ participants.
-          </p>
-        </div>
-      </div>
-
-      <div class="project-item w-[360px]">
-        <div class="text-center">
-          <!-- UBAH POSISI FOTO DI SINI: pos-y-55 bisa diganti ke pos-y-50 atau pos-y-60 -->
-          <img src="src/img/project/project3.png"
-            class="w-full h-[250px] object-cover pos-y-60 rounded-2xl mb-6 mx-auto shadow-lg">
-          <h4 class="font-bold text-2xl mb-3">Ministry of Career Development</h4>
-          <p class="text-base text-gray-600 leading-relaxed">
-            Staff at the Ministry of Career Development, Airlangga University Student Executive Board, supporting career initiatives for students. Coordinated large-scale events, including job preparation programs and workshops, while managing partnerships and event execution for over 200 participants.
-          </p>
-        </div>
-      </div>
-
-      <div class="project-item w-[360px]">
-        <div class="text-center">
-          <!-- UBAH POSISI FOTO DI SINI: pos-y-40 -->
-          <img src="src/img/project/project4.png"
-            class="w-full h-[250px] object-cover pos-y-38 rounded-2xl mb-6 mx-auto shadow-lg">
-          <h4 class="font-bold text-2xl mb-3">Airlangga University Political Science Student Association</h4>
-          <p class="text-base text-gray-600 leading-relaxed">
-            Served as the representative of the 2021 Political Science cohort in HIMAPOL UNAIR, overseeing organizational performance through monitoring and evaluation of work programs. Collaborated with leadership to formulate strategic policy recommendations and acted as a liaison by collecting and representing student aspirations.
-          </p>
-        </div>
-      </div>
-
-      <div class="project-item w-[360px]">
-        <div class="text-center">
-          <!-- UBAH POSISI FOTO DI SINI: pos-y-50 -->
-          <img src="src/img/project/project5.png"
-            class="w-full h-[250px] object-cover pos-y-50 rounded-2xl mb-6 mx-auto shadow-lg">
-          <h4 class="font-bold text-2xl mb-3">General Election Supervisory Agency of East Java</h4>
-          <p class="text-base text-gray-600 leading-relaxed">
-            Supported election oversight at Bawaslu East Java by assisting in monitoring processes, handling administrative reports, and preparing dispute documentation for the Constitutional Court. Gained experience in electoral governance, legal analysis, and inter-agency coordination.
-          </p>
-        </div>
-      </div>
-
-    </div>
+    <div id="slider" class="relative w-full h-full"></div>
 
     <button onclick="prevSlide()" class="absolute left-6 top-1/2 -translate-y-1/2 text-[#222] text-5xl font-bold hover:text-[#2FA084] transition">‹</button>
     <button onclick="nextSlide()" class="absolute right-6 top-1/2 -translate-y-1/2 text-[#222] text-5xl font-bold hover:text-[#2FA084] transition">›</button>
@@ -200,69 +127,7 @@
   <h3 class="text-3xl font-bold text-center mb-10 text-[#2FA084]">Articles</h3>
 
   <div class="relative h-[560px] flex items-center justify-center overflow-hidden">
-    <div id="articleSlider" class="relative w-full h-full">
-
-      <div class="article-item w-[360px]">
-        <div class="text-center">
-          <!-- UBAH POSISI FOTO DI SINI: pos-y-35 -->
-          <img src="src/img/articles/articles1.png"
-            class="w-full h-[250px] object-cover pos-y-35 rounded-2xl mb-6 mx-auto shadow-lg">
-          <h4 class="font-bold text-2xl mb-3">Coming Soon</h4>
-          <p class="text-base text-gray-600 leading-relaxed">Coming Soon</p>
-        </div>
-      </div>
-
-      <div class="article-item w-[360px]">
-        <div class="text-center">
-          <!-- UBAH POSISI FOTO DI SINI: pos-y-45 -->
-          <img src="src/img/articles/articles2.png"
-            class="w-full h-[250px] object-cover pos-y-45 rounded-2xl mb-6 mx-auto shadow-lg">
-          <h4 class="font-bold text-2xl mb-3">Coming Soon</h4>
-          <p class="text-base text-gray-600 leading-relaxed">Coming Soon</p>
-        </div>
-      </div>
-
-      <div class="article-item w-[360px]">
-        <div class="text-center">
-          <!-- UBAH POSISI FOTO DI SINI: pos-y-50 -->
-          <img src="src/img/articles/articles3.png"
-            class="w-full h-[250px] object-cover pos-y-50 rounded-2xl mb-6 mx-auto shadow-lg">
-          <h4 class="font-bold text-2xl mb-3">Coming Soon</h4>
-          <p class="text-base text-gray-600 leading-relaxed">Coming Soon</p>
-        </div>
-      </div>
-
-      <div class="article-item w-[360px]">
-        <div class="text-center">
-          <!-- UBAH POSISI FOTO DI SINI: pos-y-30 -->
-          <img src="src/img/articles/articles4.png"
-            class="w-full h-[250px] object-cover pos-y-30 rounded-2xl mb-6 mx-auto shadow-lg">
-          <h4 class="font-bold text-2xl mb-3">Coming Soon</h4>
-          <p class="text-base text-gray-600 leading-relaxed">Coming Soon</p>
-        </div>
-      </div>
-
-      <div class="article-item w-[360px]">
-        <div class="text-center">
-          <!-- UBAH POSISI FOTO DI SINI: pos-y-60 -->
-          <img src="src/img/articles/articles5.png"
-            class="w-full h-[250px] object-cover pos-y-60 rounded-2xl mb-6 mx-auto shadow-lg">
-          <h4 class="font-bold text-2xl mb-3">Coming Soon</h4>
-          <p class="text-base text-gray-600 leading-relaxed">Coming Soon</p>
-        </div>
-      </div>
-
-      <div class="article-item w-[360px]">
-        <div class="text-center">
-          <!-- UBAH POSISI FOTO DI SINI: pos-y-70 -->
-          <img src="src/img/articles/articles6.png"
-            class="w-full h-[250px] object-cover pos-y-70 rounded-2xl mb-6 mx-auto shadow-lg">
-          <h4 class="font-bold text-2xl mb-3">Coming Soon</h4>
-          <p class="text-base text-gray-600 leading-relaxed">Coming Soon</p>
-        </div>
-      </div>
-
-    </div>
+    <div id="articleSlider" class="relative w-full h-full"></div>
 
     <button onclick="prevArticle()" class="absolute left-6 top-1/2 -translate-y-1/2 text-[#222] text-5xl font-bold hover:text-[#2FA084] transition">‹</button>
     <button onclick="nextArticle()" class="absolute right-6 top-1/2 -translate-y-1/2 text-[#222] text-5xl font-bold hover:text-[#2FA084] transition">›</button>
@@ -273,47 +138,138 @@
 <section id="contact" class="py-20 text-center">
   <h3 class="text-3xl font-bold mb-4 text-[#2FA084]">Contact & Social</h3>
 
-  <p class="mb-10 text-gray-600">
-    Interested in collaboration, research discussion, or professional opportunities?
-  </p>
+  <p id="contactDescription" class="mb-10 text-gray-600"></p>
 
-  <div class="flex flex-wrap justify-center gap-12 items-center">
-
-    <a href="mailto:farellaz14@gmail.com"
-      class="flex flex-col items-center gap-2 hover:scale-110 transition">
-      <img src="src/img/icon/gmail.png" class="w-10 h-10">
-      <span class="text-[#2FA084] text-sm">Email</span>
-    </a>
-
-    <a href="https://www.instagram.com/farellaz/" target="_blank"
-      class="flex flex-col items-center gap-2 hover:scale-110 transition">
-      <img src="src/img/icon/instagram.png" class="w-10 h-10">
-      <span class="text-[#2FA084] text-sm">Instagram</span>
-    </a>
-
-    <a href="https://farellaz.github.io/farellaz/" target="_blank"
-      class="flex flex-col items-center gap-2 hover:scale-110 transition">
-      <img src="src/img/icon/github.png" class="w-10 h-10">
-      <span class="text-[#2FA084] text-sm">GitHub</span>
-    </a>
-
-    <a href="https://www.linkedin.com/in/farellaz/" target="_blank"
-      class="flex flex-col items-center gap-2 hover:scale-110 transition">
-      <img src="src/img/icon/linkedin.png" class="w-10 h-10">
-      <span class="text-[#2FA084] text-sm">LinkedIn</span>
-    </a>
-
-  </div>
+  <div id="contactLinks" class="flex flex-wrap justify-center gap-12 items-center"></div>
 </section>
 
 <script>
+let items = [];
+let articleItems = [];
+
+let index = 0;
+let articleIndex = 0;
+
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
-// PROJECT
-const items = document.querySelectorAll('.project-item');
-let index = 0;
+async function loadData() {
+  try {
+    const response = await fetch('data.json');
+
+    if (!response.ok) {
+      throw new Error('File data.json tidak ditemukan');
+    }
+
+    const data = await response.json();
+
+    renderWebsite(data);
+    updateSlider();
+    updateArticleSlider();
+
+    setInterval(nextSlide, 3000);
+    setInterval(nextArticle, 3500);
+
+  } catch (error) {
+    console.error(error);
+    alert('Gagal memuat data.json. Pastikan file data.json ada dan dibuka melalui Live Server.');
+  }
+}
+
+function renderWebsite(data) {
+  // PAGE
+  document.title = data.site.title;
+  document.getElementById('navbarTitle').textContent = data.site.navbarTitle;
+
+  // HERO
+  document.getElementById('heroImage').src = data.hero.image;
+  document.getElementById('heroName').textContent = data.hero.name;
+  document.getElementById('heroDescription').textContent = data.hero.description;
+
+  // ABOUT
+  document.getElementById('aboutImage').src = data.about.image;
+
+  const aboutText = document.getElementById('aboutText');
+  aboutText.innerHTML = '';
+
+  data.about.paragraphs.forEach(paragraph => {
+    const p = document.createElement('p');
+    p.className = 'text-gray-600 mb-4 text-justify';
+    p.textContent = paragraph;
+    aboutText.appendChild(p);
+  });
+
+  // PROJECTS
+  const slider = document.getElementById('slider');
+  slider.innerHTML = '';
+
+  data.projects.forEach(project => {
+    const item = document.createElement('div');
+    item.className = 'project-item w-[360px]';
+
+    item.innerHTML = `
+      <div class="text-center">
+        <img src="${project.image}"
+          class="w-full h-[250px] object-cover ${project.imagePosition} rounded-2xl mb-6 mx-auto shadow-lg"
+          alt="${project.title}">
+        <h4 class="font-bold text-2xl mb-3">${project.title}</h4>
+        <p class="text-base text-gray-600 leading-relaxed">${project.description}</p>
+      </div>
+    `;
+
+    slider.appendChild(item);
+  });
+
+  // ARTICLES
+  const articleSlider = document.getElementById('articleSlider');
+  articleSlider.innerHTML = '';
+
+  data.articles.forEach(article => {
+    const item = document.createElement('a');
+    item.href = article.link;
+    item.className = 'article-item w-[360px] block cursor-pointer';
+
+    item.innerHTML = `
+      <div class="text-center">
+        <img src="${article.image}"
+          class="w-full h-[250px] object-cover ${article.imagePosition} rounded-2xl mb-6 mx-auto shadow-lg"
+          alt="${article.title}">
+        <h4 class="font-bold text-2xl mb-3">${article.title}</h4>
+        <p class="text-base text-gray-600 leading-relaxed">${article.description}</p>
+      </div>
+    `;
+
+    articleSlider.appendChild(item);
+  });
+
+  // CONTACT
+  document.getElementById('contactDescription').textContent = data.contact.description;
+
+  const contactLinks = document.getElementById('contactLinks');
+  contactLinks.innerHTML = '';
+
+  data.contact.links.forEach(link => {
+    const a = document.createElement('a');
+    a.href = link.url;
+    a.className = 'flex flex-col items-center gap-2 hover:scale-110 transition';
+
+    if (link.newTab) {
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+    }
+
+    a.innerHTML = `
+      <img src="${link.icon}" class="w-10 h-10" alt="${link.label}">
+      <span class="text-[#2FA084] text-sm">${link.label}</span>
+    `;
+
+    contactLinks.appendChild(a);
+  });
+
+  items = document.querySelectorAll('.project-item');
+  articleItems = document.querySelectorAll('.article-item');
+}
 
 function updateSlider() {
   const total = items.length;
@@ -339,10 +295,6 @@ function updateSlider() {
   });
 }
 
-// ARTICLE
-const articleItems = document.querySelectorAll('.article-item');
-let articleIndex = 0;
-
 function updateArticleSlider() {
   const total = articleItems.length;
 
@@ -350,34 +302,48 @@ function updateArticleSlider() {
     item.style.opacity = "0";
     item.style.transform = "translate(-50%, -50%) scale(0.7)";
     item.style.zIndex = "0";
+    item.style.pointerEvents = "none";
 
     if (i === articleIndex) {
       item.style.opacity = "1";
       item.style.transform = "translate(-50%, -50%) scale(1)";
       item.style.zIndex = "30";
+      item.style.pointerEvents = "auto";
     } else if (i === (articleIndex - 1 + total) % total) {
       item.style.opacity = "0.35";
       item.style.transform = "translate(-150%, -50%) scale(0.75)";
       item.style.zIndex = "10";
+      item.style.pointerEvents = "auto";
     } else if (i === (articleIndex + 1) % total) {
       item.style.opacity = "0.35";
       item.style.transform = "translate(50%, -50%) scale(0.75)";
       item.style.zIndex = "10";
+      item.style.pointerEvents = "auto";
     }
   });
 }
 
-function nextSlide() { index = (index + 1) % items.length; updateSlider(); }
-function prevSlide() { index = (index - 1 + items.length) % items.length; updateSlider(); }
+function nextSlide() {
+  index = (index + 1) % items.length;
+  updateSlider();
+}
 
-function nextArticle() { articleIndex = (articleIndex + 1) % articleItems.length; updateArticleSlider(); }
-function prevArticle() { articleIndex = (articleIndex - 1 + articleItems.length) % articleItems.length; updateArticleSlider(); }
+function prevSlide() {
+  index = (index - 1 + items.length) % items.length;
+  updateSlider();
+}
 
-setInterval(nextSlide, 3000);
-setInterval(nextArticle, 3500);
+function nextArticle() {
+  articleIndex = (articleIndex + 1) % articleItems.length;
+  updateArticleSlider();
+}
 
-updateSlider();
-updateArticleSlider();
+function prevArticle() {
+  articleIndex = (articleIndex - 1 + articleItems.length) % articleItems.length;
+  updateArticleSlider();
+}
+
+loadData();
 </script>
 
 </body>

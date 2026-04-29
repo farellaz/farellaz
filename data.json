@@ -1,0 +1,126 @@
+{
+  "site": {
+    "title": "Portofolio Farel",
+    "navbarTitle": "MyPortfolio"
+  },
+  "hero": {
+    "name": "Farel Lazuardi Azra",
+    "image": "src/img/profil/profil.jpg",
+    "description": "Political Science Graduate | Interested in Elections, Government Relations, Public Policy Analyst, Political Marketing or Consulting, CSR | Experienced in Legal Administration, Electoral Dispute Resolution, and Inter-Agency Coordination"
+  },
+  "about": {
+    "image": "src/img/about/about.png",
+    "paragraphs": [
+      "Political Science graduate from Universitas Airlangga (GPA 3.59) with professional experience in legal administration at Bawaslu East Java. I specialize in electoral dispute resolution, managing high-stakes documentation for the Constitutional Court, and inter-agency coordination. My technical expertise encompasses legal analysis, Microsoft Office, supported with good English proficiency and multimedia editing skills in Canva, CapCut, and Adobe Premiere. I am a meticulous team leader with a focus on analytical problem-solving.",
+      "During my tenure at the General Election Supervisory Agency of East Java, I was entrusted with reviewing electoral complaints, preparing travel accountability reports, drafting legal memos, and collaborating with stakeholders such as the Regional Police and Prosecutor’s Office through the Integrated Law Enforcement Center (Sentra Gakkumdu).",
+      "Actively involved in leadership and administrative roles within student organizations, I have coordinated multi-departmental events, managed professional development programs, and strengthened partnerships through effective communication and project management.",
+      "I am particularly interested in government relations, public policy analysis, and political consulting. I aspire to contribute to initiatives that connect institutional governance with real-world impact, driven by critical thinking, collaboration, and solution-oriented research."
+    ]
+  },
+  "projects": [ 
+
+    {
+      "title": "Research Assistant",
+      "image": "src/img/project/project1.png",
+      "imagePosition": "pos-y-35",
+      "description": "Research Assistant for a published study on women’s empowerment in rural tourism development in Malang, Indonesia. Conducted interview transcription and supported qualitative analysis of women’s roles in village governance."
+    },
+    {
+      "title": "Ministry of Student Synergy",
+      "image": "src/img/project/project2.png",
+      "imagePosition": "pos-y-45",
+      "description": "Staff at the Ministry of Student Synergy, Airlangga University Student Executive Board, focusing on developing student talents and engagement. Managed correspondence and event administration, built media partnerships, and led cross-division collaboration for large-scale programs involving over 100+ participants."
+    },
+    {
+      "title": "Ministry of Career Development",
+      "image": "src/img/project/project3.png",
+      "imagePosition": "pos-y-60",
+      "description": "Staff at the Ministry of Career Development, Airlangga University Student Executive Board, supporting career initiatives for students. Coordinated large-scale events, including job preparation programs and workshops, while managing partnerships and event execution for over 200 participants."
+    },
+    {
+      "title": "Airlangga University Political Science Student Association",
+      "image": "src/img/project/project4.png",
+      "imagePosition": "pos-y-38",
+      "description": "Served as the representative of the 2021 Political Science cohort in HIMAPOL UNAIR, overseeing organizational performance through monitoring and evaluation of work programs. Collaborated with leadership to formulate strategic policy recommendations and acted as a liaison by collecting and representing student aspirations."
+    },
+    {
+      "title": "General Election Supervisory Agency of East Java",
+      "image": "src/img/project/project5.png",
+      "imagePosition": "pos-y-50",
+      "description": "Supported election oversight at Bawaslu East Java by assisting in monitoring processes, handling administrative reports, and preparing dispute documentation for the Constitutional Court. Gained experience in electoral governance, legal analysis, and inter-agency coordination."
+    }
+  ],
+  "articles": [
+    {
+      "title": "Demokrasi dan Tantangan Partisipasi Anak Muda",
+      "image": "src/img/articles/articles1.png",
+      "imagePosition": "pos-y-35",
+      "description": "Demokrasi partisipasi",
+      "link": "articles/articles1.html"
+    },
+    {
+      "title": "Analisis Kebijakan Publik dalam Menjawab Masalah Sosial",
+      "image": "src/img/articles/articles2.png",
+      "imagePosition": "pos-y-45",
+      "description": "Analisis kebijakan publik",
+      "link": "articles/articles2.html"
+    },
+    {
+      "title": "Coming Soon",
+      "image": "src/img/articles/articles3.png",
+      "imagePosition": "pos-y-50",
+      "description": "Coming Soon",
+      "link": "articles/articles3.html"
+    },
+    {
+      "title": "Coming Soon",
+      "image": "src/img/articles/articles4.png",
+      "imagePosition": "pos-y-30",
+      "description": "Coming Soon",
+      "link": "articles/articles4.html"
+    },
+    {
+      "title": "Coming Soon",
+      "image": "src/img/articles/articles5.png",
+      "imagePosition": "pos-y-60",
+      "description": "Coming Soon",
+      "link": "articles/articles5.html"
+    },
+    {
+      "title": "Coming Soon",
+      "image": "src/img/articles/articles6.png",
+      "imagePosition": "pos-y-70",
+      "description": "Coming Soon",
+      "link": "articles/articles6.html"
+    }
+  ],
+  "contact": {
+    "description": "Interested in collaboration, research discussion, or professional opportunities?",
+    "links": [
+      {
+        "label": "Email",
+        "url": "mailto:farellaz14@gmail.com",
+        "icon": "src/img/icon/gmail.png",
+        "newTab": false
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/farellaz/",
+        "icon": "src/img/icon/instagram.png",
+        "newTab": true
+      },
+      {
+        "label": "GitHub",
+        "url": "https://farellaz.github.io/farellaz/",
+        "icon": "src/img/icon/github.png",
+        "newTab": true
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/farellaz/",
+        "icon": "src/img/icon/linkedin.png",
+        "newTab": true
+      }
+    ]
+  }
+}
